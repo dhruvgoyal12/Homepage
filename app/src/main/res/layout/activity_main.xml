@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/background"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ZINE"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textFontWeight="1200"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt3"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/robot3" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:drawableTop="@drawable/contacts"
+        android:drawablePadding="14sp"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:paddingTop="100dp"
+        android:text="contact us"
+        android:textColor="#000000"
+        android:textFontWeight="1000"
+
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/bt1"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:drawableTop="@drawable/team"
+        android:paddingTop="20dp"
+        android:drawablePadding="14sp"
+        android:elevation="20dp"
+        android:paddingBottom="30dp"
+
+        android:padding="10dp"
+
+        android:text="Our Team"
+        android:textColor="#000000"
+        android:textFontWeight="1000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/bt2"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:drawableTop="@drawable/website"
+        android:drawablePadding="14sp"
+        android:elevation="20dp"
+        android:padding="10dp"
+
+        android:text="Visit us"
+        android:textColor="#000000"
+        android:textFontWeight="1000"
+        android:textSize="30sp" />
+    </RelativeLayout>
+</ScrollView>
+
+
