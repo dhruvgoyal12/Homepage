@@ -17,6 +17,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         ListView listview = findViewById(R.id.listview) ;
+        getSupportActionBar().setTitle("Zine 2 year");
 
         CustomAdapter customAdapter = new CustomAdapter();
 

@@ -16,7 +16,7 @@
         android:layout_marginStart="20dp"
         android:textSize="30sp"
         android:textColor="#000000"
-        android:fontFamily="monospace"
+        android:fontFamily="Serif"
         android:textFontWeight="1200"
         android:textAlignment="center"
         android:elevation="10dp"
@@ -31,11 +31,11 @@
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
         android:layout_below="@id/textView_name"
-        android:fontFamily="casual"
+        android:fontFamily="monospace"
         android:textColor="#000000"
         android:elevation="10dp"
         android:paddingBottom="10dp"
-
+        android:textStyle="italic"
         android:layout_marginStart="20dp"
         android:textAlignment="center"
         android:text="TextView" />

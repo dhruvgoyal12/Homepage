@@ -9,96 +9,165 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ZINE"
-        android:layout_centerHorizontal="true"
-        android:textSize="50sp"
-        android:textAlignment="center"
-        android:textFontWeight="1200"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:paddingTop="10dp"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bt3"
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="182dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/robot3" />
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="ZINE"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textFontWeight="1000"
+            android:textSize="50sp"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_centerHorizontal="true"
 
-    <Button
+            android:layout_marginTop="0dp"
+
+            android:fontFamily="monospace"
+
+            android:text="Where imagination leads to creation"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="10sp"
+             />
+
+
+
+        <Button
         android:id="@+id/bt1"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="126dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_button"
         android:drawableTop="@drawable/contacts"
         android:drawablePadding="14sp"
-        android:elevation="20dp"
-        android:padding="10dp"
-        android:paddingTop="100dp"
-        android:text="contact us"
+        android:elevation="30dp"
+        android:padding="20dp"
+
+        android:text="contact"
         android:textColor="#000000"
         android:textFontWeight="1000"
 
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/bt2"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_below="@id/bt1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/button"
+
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/custom_button"
         android:drawableTop="@drawable/team"
-        android:paddingTop="20dp"
+
         android:drawablePadding="14sp"
-        android:elevation="20dp"
-        android:paddingBottom="30dp"
+        android:elevation="30dp"
 
-        android:padding="10dp"
 
-        android:text="Our Team"
+        android:padding="20dp"
+
+        android:text="Team"
         android:textColor="#000000"
         android:textFontWeight="1000"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/bt3"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@id/bt2"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/button"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_button"
         android:drawableTop="@drawable/website"
         android:drawablePadding="14sp"
-        android:elevation="20dp"
-        android:padding="10dp"
+        android:elevation="30dp"
+        android:padding="20dp"
 
         android:text="Visit us"
         android:textColor="#000000"
         android:textFontWeight="1000"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:layout_below="@id/bt2"
+            android:layout_alignParentRight="true"
+
+
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/website"
+            android:drawablePadding="14sp"
+            android:elevation="30dp"
+            android:padding="20dp"
+
+            android:text="Extras"
+            android:textColor="#000000"
+            android:textFontWeight="1000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt3"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="40dp"
+
+            android:fontFamily="monospace"
+
+            android:text="Have the courage to follow your heart and intuition."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
+       <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+
+        android:fontFamily="monospace"
+
+        android:text="-Steve Jobs"
+        android:textAlignment="center"
+        android:textColor="#000000"
+
+        android:textSize="20sp"
+        />
+
     </RelativeLayout>
 </ScrollView>
 

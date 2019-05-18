@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
         bt3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openWebsite("https://www.google.com");
+                openWebsite("http://zine.co.in");
             }
         });
         bt1.setOnClickListener(new View.OnClickListener(){
@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 openActivity3();
             }
         } );
+        getSupportActionBar().setTitle("Zine Homepage");
+
     }
     public void openWebsite(String url){
         Intent intent = new Intent(Intent.ACTION_VIEW);
