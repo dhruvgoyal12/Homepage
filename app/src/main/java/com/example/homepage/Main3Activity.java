@@ -50,6 +50,7 @@ public class Main3Activity extends AppCompatActivity {
             }
         });
         getSupportActionBar().setTitle("Contact us");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public void openfacebook(String url){
         Intent intent = new Intent(Intent.ACTION_VIEW) ;

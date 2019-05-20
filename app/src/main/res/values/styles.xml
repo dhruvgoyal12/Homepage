@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomAnimation</item>
     </style>
     <style name="TextAppearance.AppCompat.widget.ActionBar.Title" parent="@android:style/TextAppearance" >
         <item name = "android:textSize">30dp</item>
@@ -13,4 +14,10 @@
         <item name ="android:text">Zine App</item>
         <item name = "android:textAlignment">center</item>
         </style>
+    <style name="CustomAnimation" parent="@android:style/Animation.Activity" >
+        <item name="android:activityOpenEnterAnimation">@anim/slidein_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slideout_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slidein_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slideout_right</item>
+    </style>
 </resources>

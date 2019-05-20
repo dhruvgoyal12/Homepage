@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         } );
         getSupportActionBar().setTitle("Zine Homepage");
 
+
     }
     public void openWebsite(String url){
         Intent intent = new Intent(Intent.ACTION_VIEW);

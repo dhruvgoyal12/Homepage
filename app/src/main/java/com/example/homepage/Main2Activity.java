@@ -9,8 +9,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
-    String[] NAMES={"Akash Sharma", "Bhanu" , "Brijraj" , "Charu" , "Dhruv Goyal" , "Harsh Chaudhary" ,"Kshitiz Kamal", "Muskan Garg"
-    ,"Nikita Rautela" , "Pravesh Sandhu" , "Rajat Sharma" , "Saransh " , "Sneha Yadav" ,"Vaibhav"} ;
+    String[] NAMES={"Akash Sharma", "Bhanu " , "Brijraj" , "Charu" , "Dhruv Goyal" , "Harsh Chaudhary" ,"Kshitiz Kamal", "Muskan Garg"
+    ,"Nikita Rautela" , "Pravesh Sandhu" , "Rajat Agarwal" , "Saransh Tayal"
+             , "Sneha Yadav" ,"Vaibhav Agarwal"} ;
     String[] BRANCH={"CSE" , "ME" ,"ME" ,"CHE", "CSE" , "ME" , "CSE" , "CE" , "ME" , "CSE" , "EE" , "CHE" ,"EE" ,"CSE"} ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         ListView listview = findViewById(R.id.listview) ;
         getSupportActionBar().setTitle("Zine 2 year");
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         CustomAdapter customAdapter = new CustomAdapter();
 
         listview.setAdapter(customAdapter);
