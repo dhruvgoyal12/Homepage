@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Homepage</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="bool_hos"> YES/NO</string>
+    <string name="Branch_choice">Choose your Branch</string>
+    <string-array name ="hostel_bool">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name ="Branch">
+        <item>Computer Science</item>
+        <item>Chemical</item>
+        <item>Civil</item>
+        <item>Electronics</item>
+        <item>Mechanical</item>
+        <item>Metallurgy</item>
+        <item>Electrical</item>
+    </string-array>
 </resources>

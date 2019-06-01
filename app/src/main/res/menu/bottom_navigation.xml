@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     <item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:title="Home"/>
+    <item
+        android:id="@+id/nav_query"
+        android:icon="@drawable/ic_question_answer_black_24dp"
+        android:title="Query"
+        />
+    <item
+        android:id="@+id/nav_reg"
+        android:icon="@drawable/ic_call_black_24dp"
+        android:title="Registration"/>
+
+
+</menu>
