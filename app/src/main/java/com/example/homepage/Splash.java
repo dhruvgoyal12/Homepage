@@ -14,14 +14,28 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
 
-        android.os.Handler handler1= new android.os.Handler();
+       /* android.os.Handler handler1= new android.os.Handler();
         handler1.postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(Splash.this,MainActivity.class));
                 finish();
             }
-        },1000);
+        },1000);*/
+       Thread background = new Thread(){
+           public void run(){
+               try {
+                   sleep(1000);
+                   Intent intent = new Intent(getBaseContext(),MainActivity.class);
+                   startActivity(intent);
+                   finish();
+               }
+               catch (Exception e){
+
+               }
+           }
+       };
+       background.start();
 
     }
 }
