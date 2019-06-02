@@ -8,6 +8,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Homefragmnet()).commit();
+
        /* bt3 = findViewById(R.id.bt3) ;
         bt2 = findViewById(R.id.bt2) ;
         bt1 = findViewById(R.id.bt1) ;
@@ -53,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =

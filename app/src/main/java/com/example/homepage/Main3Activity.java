@@ -73,7 +73,7 @@ public class Main3Activity extends AppCompatActivity {
         }
         else{
             String dial = "tel:" + number;
-            Intent intent = new Intent(Intent.ACTION_CALL,Uri.parse(dial)) ;
+            Intent intent = new Intent(Intent.ACTION_DIAL,Uri.parse(dial)) ;
             startActivity(intent);
         }
 
