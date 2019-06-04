@@ -25,7 +25,8 @@ package="com.example.homepage">
     <activity
         android:name=".Main2Activity"
         android:parentActivityName=".MainActivity" />
-    <activity android:name=".MainActivity">
+    <activity android:name=".MainActivity"
+        android:windowSoftInputMode="adjustPan">
 
     </activity>
 </application>

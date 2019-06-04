@@ -4,6 +4,26 @@
     <string name="action_settings">Settings</string>
     <string name="bool_hos"> YES/NO</string>
     <string name="Branch_choice">Choose your Branch</string>
+    <string name = "name">Name</string>
+    <string name = "college_ID">College ID</string>
+    <string name = "mob">Mobile Number</string>
+    <string name = "query">Query</string>
+    <string name = "email">Email ID</string>
+    <string name = "host">Hosteler :</string>
+    <string name = "branch">Branch :</string>
+    <string name = "register">REGISTER</string>
+    <string name = "submit">SUBMIT</string>
+    <string name = "registration">Registration Form</string>
+    <string name = "query_p">Query Page</string>
+    <string name = "zine">ZINE</string>
+    <string name = "contact">CONTACT</string>
+    <string name = "visit">VISIT US</string>
+    <string name = "team">TEAM</string>
+    <string name = "extras">EXTRAS</string>
+    <string name = "quote">Have the courage to follow your heart and intuition.</string>
+    <string name = "contact1">Sumit Soni</string>
+    <string name = "contact2">Paarth </string>
+
     <string-array name ="hostel_bool">
         <item>Yes</item>
         <item>No</item>

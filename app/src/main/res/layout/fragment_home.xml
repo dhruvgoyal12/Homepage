@@ -20,7 +20,7 @@
 
             android:fontFamily="serif"
             android:paddingTop="10dp"
-            android:text="ZINE"
+            android:text="@string/zine"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textFontWeight="1000"
@@ -60,7 +60,7 @@
             android:elevation="30dp"
             android:padding="20dp"
 
-            android:text="contact"
+            android:text="@string/contact"
             android:textColor="#000000"
             android:textFontWeight="1000"
 
@@ -85,7 +85,7 @@
 
             android:padding="20dp"
 
-            android:text="Team"
+            android:text="@string/team"
             android:textColor="#000000"
             android:textFontWeight="1000"
             android:textSize="20sp" />
@@ -106,7 +106,7 @@
             android:elevation="30dp"
             android:padding="20dp"
 
-            android:text="Visit us"
+            android:text="@string/visit"
             android:textColor="#000000"
             android:textFontWeight="1000"
             android:textSize="20sp" />
@@ -127,7 +127,7 @@
             android:elevation="30dp"
             android:padding="20dp"
 
-            android:text="Extras"
+            android:text="@string/extras"
             android:textColor="#000000"
             android:textFontWeight="1000"
             android:textSize="20sp" />
@@ -143,7 +143,7 @@
 
             android:fontFamily="monospace"
 
-            android:text="Have the courage to follow your heart and intuition."
+            android:text="@string/quote"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textStyle="italic"

@@ -30,28 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Homefragmnet()).commit();
 
-       /* bt3 = findViewById(R.id.bt3) ;
-        bt2 = findViewById(R.id.bt2) ;
-        bt1 = findViewById(R.id.bt1) ;
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity2();
-            }
-        });
-        bt3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                openWebsite("http://zine.co.in");
-            }
-        });
-        bt1.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                openActivity3();
-            }
-        } );
-        getSupportActionBar().setTitle("Zine Homepage");*/
 
 
 
@@ -60,6 +39,20 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.main,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case R.id.facebook:
+                openWebsite("https://www.facebook.com/ROBOTICS.ZINE/");
+            case R.id.inst:
+                openWebsite("https://www.instagram.com/zine.robotics/");
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
@@ -84,6 +77,21 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
+    public void openWebsite(String url){
+        Intent intent = new Intent(Intent.ACTION_VIEW) ;
+        intent.setData(Uri.parse(url));
+        startActivity(intent) ;}
+
+    }
+
+
+
+
+
+
+
+
+
   /*  public void openWebsite(String url){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url)) ;
@@ -99,4 +107,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,Main3Activity.class) ;
         startActivity(intent) ;
     }*/
-}
+
