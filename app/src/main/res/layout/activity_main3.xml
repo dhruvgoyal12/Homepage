@@ -7,6 +7,10 @@
     android:orientation="vertical"
     android:background="#f5f5dc"
     tools:context=".Main3Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -30,77 +34,12 @@
             android:textStyle="bold"
 
             android:text="@string/contact1" />
-    <TextView
-        android:id="@+id/textView_name2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/iv2"
-        android:layout_below="@id/textView_name1"
-        android:layout_marginTop="50dp"
-        android:layout_toStartOf="@id/ib1"
-        android:layout_marginEnd="5dp"
-        android:padding="10dp"
-        android:layout_marginStart="5dp"
-        android:textSize="25sp"
-        android:textColor="#000000"
-        android:fontFamily="Serif"
-        android:textFontWeight="1200"
-        android:textAlignment="center"
-        android:elevation="10dp"
-        android:textStyle="bold"
-
-            android:text="@string/contact2" />
-
-
-        <android.support.v7.widget.AppCompatImageButton
-            android:id="@+id/ib1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_alignParentRight="true"
-
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/icons8_phone_48"
-            />
-
-
-
-
-        <android.support.v7.widget.AppCompatImageButton
-            android:id="@+id/ib2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ib1"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/icons8_phone_48"
-            />
-
-
         <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:src="@drawable/photo_scene"
-
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/iv2"
+            android:id="@+id/iv"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_below="@id/iv"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:src="@drawable/photo_scene"
@@ -108,5 +47,81 @@
             app:civ_border_width="2dp"
             app:civ_border_color="#FF000000"/>
 
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/ib1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icons8_phone_48"
+            />
+
     </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="50dp"
+            android:background="#000000"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/ib2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icons8_phone_48"
+            />
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/photo_scene"
+
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <TextView
+            android:id="@+id/textView_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv2"
+
+            android:layout_toStartOf="@id/ib2"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:fontFamily="Serif"
+            android:textFontWeight="1200"
+            android:textAlignment="center"
+            android:elevation="10dp"
+            android:textStyle="bold"
+
+            android:text="@string/contact2" />
+
+    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>

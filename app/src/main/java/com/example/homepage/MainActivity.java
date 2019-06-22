@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Homefragmnet()).commit();
-
+        if(savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Homefragmnet()).commit();
+        }
 
 
 
@@ -45,10 +45,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        switch (id){
-            case R.id.facebook:
-                openWebsite("https://www.facebook.com/ROBOTICS.ZINE/");
-            case R.id.inst:
+        if ( id == R.id.facebook )
+        { openWebsite("https://www.facebook.com/ROBOTICS.ZINE/");
+    }
+        else if( id == R.id.inst){
+
+
                 openWebsite("https://www.instagram.com/zine.robotics/");
 
         }
